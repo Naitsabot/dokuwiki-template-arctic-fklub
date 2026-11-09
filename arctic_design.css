@@ -73,6 +73,122 @@ div.dokuwiki .footerinc a img {
   border: 0;
 }
 
+/* ----- Small screens ----- */
+@media screen and (max-width: 700px) {
+  body {
+    margin: 0;
+  }
+
+  div#wrapper,
+  div#wrapper.media {
+    box-sizing: border-box;
+    width: 100%;
+    border-left: 0;
+    border-right: 0;
+    padding: 0.5em;
+  }
+
+  div.dokuwiki div.left_sidebar,
+  div.dokuwiki div.right_sidebar,
+  div.dokuwiki main.left_page,
+  div.dokuwiki main.right_page,
+  div.dokuwiki main.center_page {
+    box-sizing: border-box;
+    float: none;
+    width: 100% !important;
+    padding: 0;
+    border: 0;
+  }
+
+  div.dokuwiki div.left_sidebar,
+  div.dokuwiki div.right_sidebar {
+    margin-bottom: 1em;
+    border-bottom: 1px solid __border__;
+    padding-bottom: 0.5em;
+  }
+
+  div.dokuwiki main.page,
+  div.dokuwiki main.left_page,
+  div.dokuwiki main.right_page,
+  div.dokuwiki main.center_page {
+    text-align: left;
+  }
+
+  div.dokuwiki .header {
+    height: auto;
+    min-height: __header_height__;
+    overflow: hidden;
+  }
+
+  div.dokuwiki .pagename,
+  div.dokuwiki .logo {
+    box-sizing: border-box;
+    float: none;
+    width: 100%;
+    text-align: left;
+    font-size: 130%;
+  }
+
+  div.dokuwiki .bar,
+  div.dokuwiki .bar-left,
+  div.dokuwiki .bar-right {
+    box-sizing: border-box;
+    float: none;
+    width: 100%;
+    text-align: left;
+  }
+
+  div.dokuwiki .bar-left,
+  div.dokuwiki .bar-right {
+    padding: 0.2em 0;
+  }
+
+  div.dokuwiki table {
+    display: block;
+    max-width: 100%;
+    overflow-x: auto;
+  }
+
+  div.dokuwiki img,
+  div.dokuwiki video,
+  div.dokuwiki iframe {
+    max-width: 100%;
+    height: auto;
+  }
+
+  div.dokuwiki pre {
+    max-width: 100%;
+    overflow-x: auto;
+  }
+
+  #media__manager {
+    overflow: auto;
+  }
+
+  #media__left,
+  #media__right {
+    position: static;
+    box-sizing: border-box;
+    width: 100%;
+    height: auto;
+    max-height: 50vh;
+  }
+
+  #mediamanager__page {
+    min-width: 0;
+  }
+
+  #mediamanager__page .panel,
+  #mediamanager__page .namespaces,
+  #mediamanager__page .filelist,
+  #mediamanager__page .file {
+    box-sizing: border-box;
+    float: none;
+    width: 100%;
+    min-width: 0;
+  }
+}
+
 /* ----- Sidebar -------------- */
 div.dokuwiki div.left_sidebar div.secedit,
 div.dokuwiki div.right_sidebar div.secedit {
