@@ -73,6 +73,10 @@ div.dokuwiki .footerinc a img {
   border: 0;
 }
 
+div.dokuwiki .content_area {
+  display: flow-root;
+}
+
 /* ----- Small screens ----- */
 @media screen and (max-width: 700px) {
   body {
@@ -113,6 +117,20 @@ div.dokuwiki .footerinc a img {
   div.dokuwiki main.right_page,
   div.dokuwiki main.center_page {
     text-align: left;
+  }
+
+  div.dokuwiki .content_area {
+    display: flex;
+    flex-direction: column;
+  }
+
+  div.dokuwiki .content_area main {
+    order: 1;
+  }
+
+  div.dokuwiki .content_area .left_sidebar,
+  div.dokuwiki .content_area .right_sidebar {
+    order: 2;
   }
 
   div.dokuwiki .header {
